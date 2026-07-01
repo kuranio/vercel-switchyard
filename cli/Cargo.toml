@@ -1,0 +1,14 @@
+[package]
+name = "switchyard-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "switchyard"
+path = "src/main.rs"
+
+[dependencies]
+switchyard-core = { path = "../core" }
+clap = { version = "4", features = ["derive"] }
+anyhow.workspace = true
